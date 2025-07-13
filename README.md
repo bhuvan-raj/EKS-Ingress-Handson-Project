@@ -1,14 +1,10 @@
-Absolutely\! Here's a comprehensive `README.md` file for your EKS Ingress lab, following common Markdown practices and including all the steps we've discussed.
-
------
-
 # EKS Ingress Lab: Path-Based Routing with AWS Load Balancer Controller
 
 This repository contains the necessary configurations and a step-by-step guide to demonstrate path-based routing using Kubernetes Ingress on an Amazon Elastic Kubernetes Service (EKS) cluster. We will deploy two distinct web applications (`app1` and `app2`) and use the AWS Load Balancer Controller to expose them via a single Application Load Balancer (ALB), routing traffic based on URL paths.
 
 ## Table of Contents
 
-  * [Introduction](https://www.google.com/search?q=%23introduction)
+  * [Introduction](./README.md/Introduction)
   * [Prerequisites](https://www.google.com/search?q=%23prerequisites)
   * [Architecture](https://www.google.com/search?q=%23architecture)
   * [Lab Steps](https://www.google.com/search?q=%23lab-steps)
