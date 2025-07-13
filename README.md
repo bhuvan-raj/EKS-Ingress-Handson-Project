@@ -35,7 +35,7 @@ Before you begin, ensure you have the following tools installed and configured o
   * **kubectl:** The Kubernetes command-line tool.
       * [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
   * **eksctl:** A simple CLI tool for creating and managing EKS clusters. This greatly simplifies EKS cluster creation and management.
-      * [Install eksctl](https://www.google.com/search?q=https://eksctl.io/introduction/%23installation)
+      * [Install eksctl]([https://www.google.com/search?q=https://eksctl.io/introduction/%23installation](https://eksctl.io/installation/))
   * **Helm v3:** The package manager for Kubernetes, used to install the AWS Load Balancer Controller.
       * [Install Helm](https://helm.sh/docs/intro/install/)
 
