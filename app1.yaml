@@ -1,0 +1,63 @@
+# app1.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app1-deployment
+  labels:
+    app: app1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app1
+  template:
+    metadata:
+      labels:
+        app: app1
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: html-volume
+          mountPath: /usr/share/nginx/html
+      volumes:
+      - name: html-volume
+        configMap:
+          name: app1-html-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app1-service
+spec:
+  selector:
+    app: app1
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort # Or ClusterIP
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app1-html-config
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Application 1</title>
+    <style>
+      body { background-color: #f0f8ff; font-family: sans-serif; text-align: center; }
+      h1 { color: #4682b4; }
+    </style>
+    </head>
+    <body>
+    <h1>Welcome to Application 1!</h1>
+    <p>You reached me via the /app1 path.</p>
+    </body>
+    </html>
