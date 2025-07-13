@@ -4,7 +4,7 @@ This repository contains the necessary configurations and a step-by-step guide t
 
 ## Table of Contents
 
-  * [Introduction](./README.md/Introduction)
+  * [Introduction](#Introduction)
   * [Prerequisites](https://www.google.com/search?q=%23prerequisites)
   * [Architecture](https://www.google.com/search?q=%23architecture)
   * [Lab Steps](https://www.google.com/search?q=%23lab-steps)
